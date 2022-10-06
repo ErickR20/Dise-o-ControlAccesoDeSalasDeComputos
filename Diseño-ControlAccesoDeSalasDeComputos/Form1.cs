@@ -1,13 +1,24 @@
 namespace Diseño_ControlAccesoDeSalasDeComputos
 {
-    public partial class Form1 : Form
+    public partial class Interfaz : Form
     {
-        public Form1()
+        public Interfaz()
         {
             InitializeComponent();
         }
 
         private void salasDeComputoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salaDeComputo1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
