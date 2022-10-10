@@ -22,5 +22,10 @@ namespace Diseño_ControlAccesoDeSalasDeComputos
         {
 
         }
+
+        private void salaDeComputoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

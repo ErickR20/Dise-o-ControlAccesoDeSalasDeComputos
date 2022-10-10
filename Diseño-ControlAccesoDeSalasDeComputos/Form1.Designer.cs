@@ -32,17 +32,33 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.iNICIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salasDeComputoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaDeComputo1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaDeComputo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaDeComputo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hORARIOSDETRABAJOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mATERIASIMPARTIDASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.telecomunicacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estructuraDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tallerDeBasesDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sistemasOperativosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diseñoEImpDeBdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salaDeComputoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grupoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vecesQueUsoUnAulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vecesQueImpartioClasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vecesQueFaltóToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clasesQueImparteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vecesQueFaltóToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vecesQueAsistióToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clasesALasQueAsisteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profesoresQueTieneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodoActualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seleccionarPeriodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grupoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clasesQueTomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profesoresQueTieneToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.salaDeComputoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -62,9 +78,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iNICIOToolStripMenuItem,
-            this.salasDeComputoToolStripMenuItem,
-            this.hORARIOSDETRABAJOToolStripMenuItem,
-            this.mATERIASIMPARTIDASToolStripMenuItem});
+            this.registrarToolStripMenuItem,
+            this.consultarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(691, 24);
@@ -77,83 +92,200 @@
             this.iNICIOToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.iNICIOToolStripMenuItem.Text = "INICIO";
             // 
-            // salasDeComputoToolStripMenuItem
+            // registrarToolStripMenuItem
             // 
-            this.salasDeComputoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salaDeComputo1ToolStripMenuItem,
-            this.salaDeComputo2ToolStripMenuItem,
-            this.salaDeComputo3ToolStripMenuItem});
-            this.salasDeComputoToolStripMenuItem.Name = "salasDeComputoToolStripMenuItem";
-            this.salasDeComputoToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
-            this.salasDeComputoToolStripMenuItem.Text = "SALAS DE COMPUTO";
-            this.salasDeComputoToolStripMenuItem.Click += new System.EventHandler(this.salasDeComputoToolStripMenuItem_Click);
+            this.registrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alumnoToolStripMenuItem,
+            this.docenteToolStripMenuItem,
+            this.salaDeComputoToolStripMenuItem,
+            this.horarioToolStripMenuItem,
+            this.grupoToolStripMenuItem,
+            this.periodoToolStripMenuItem});
+            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.registrarToolStripMenuItem.Text = "Registrar";
             // 
-            // salaDeComputo1ToolStripMenuItem
+            // alumnoToolStripMenuItem
             // 
-            this.salaDeComputo1ToolStripMenuItem.Name = "salaDeComputo1ToolStripMenuItem";
-            this.salaDeComputo1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salaDeComputo1ToolStripMenuItem.Text = "Sala de computo 1";
-            this.salaDeComputo1ToolStripMenuItem.Click += new System.EventHandler(this.salaDeComputo1ToolStripMenuItem_Click);
+            this.alumnoToolStripMenuItem.Name = "alumnoToolStripMenuItem";
+            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alumnoToolStripMenuItem.Text = "Alumno";
             // 
-            // salaDeComputo2ToolStripMenuItem
+            // docenteToolStripMenuItem
             // 
-            this.salaDeComputo2ToolStripMenuItem.Name = "salaDeComputo2ToolStripMenuItem";
-            this.salaDeComputo2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salaDeComputo2ToolStripMenuItem.Text = "Sala de computo 2";
+            this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.docenteToolStripMenuItem.Text = "Docente";
             // 
-            // salaDeComputo3ToolStripMenuItem
+            // salaDeComputoToolStripMenuItem
             // 
-            this.salaDeComputo3ToolStripMenuItem.Name = "salaDeComputo3ToolStripMenuItem";
-            this.salaDeComputo3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salaDeComputo3ToolStripMenuItem.Text = "Sala de computo 3";
+            this.salaDeComputoToolStripMenuItem.Name = "salaDeComputoToolStripMenuItem";
+            this.salaDeComputoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salaDeComputoToolStripMenuItem.Text = "Sala de computo";
             // 
-            // hORARIOSDETRABAJOToolStripMenuItem
+            // horarioToolStripMenuItem
             // 
-            this.hORARIOSDETRABAJOToolStripMenuItem.Name = "hORARIOSDETRABAJOToolStripMenuItem";
-            this.hORARIOSDETRABAJOToolStripMenuItem.Size = new System.Drawing.Size(147, 20);
-            this.hORARIOSDETRABAJOToolStripMenuItem.Text = "HORARIOS DE TRABAJO";
+            this.horarioToolStripMenuItem.Name = "horarioToolStripMenuItem";
+            this.horarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.horarioToolStripMenuItem.Text = "Horario";
             // 
-            // mATERIASIMPARTIDASToolStripMenuItem
+            // grupoToolStripMenuItem
             // 
-            this.mATERIASIMPARTIDASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.telecomunicacionesToolStripMenuItem,
-            this.estructuraDeDatosToolStripMenuItem,
-            this.tallerDeBasesDeDatosToolStripMenuItem,
-            this.sistemasOperativosToolStripMenuItem,
-            this.diseñoEImpDeBdToolStripMenuItem});
-            this.mATERIASIMPARTIDASToolStripMenuItem.Name = "mATERIASIMPARTIDASToolStripMenuItem";
-            this.mATERIASIMPARTIDASToolStripMenuItem.Size = new System.Drawing.Size(141, 20);
-            this.mATERIASIMPARTIDASToolStripMenuItem.Text = "MATERIAS IMPARTIDAS";
+            this.grupoToolStripMenuItem.Name = "grupoToolStripMenuItem";
+            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grupoToolStripMenuItem.Text = "Grupo";
             // 
-            // telecomunicacionesToolStripMenuItem
+            // periodoToolStripMenuItem
             // 
-            this.telecomunicacionesToolStripMenuItem.Name = "telecomunicacionesToolStripMenuItem";
-            this.telecomunicacionesToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.telecomunicacionesToolStripMenuItem.Text = "Telecomunicaciones";
+            this.periodoToolStripMenuItem.Name = "periodoToolStripMenuItem";
+            this.periodoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.periodoToolStripMenuItem.Text = "Periodo";
             // 
-            // estructuraDeDatosToolStripMenuItem
+            // consultarToolStripMenuItem
             // 
-            this.estructuraDeDatosToolStripMenuItem.Name = "estructuraDeDatosToolStripMenuItem";
-            this.estructuraDeDatosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.estructuraDeDatosToolStripMenuItem.Text = "Estructura de datos";
+            this.consultarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profesorToolStripMenuItem,
+            this.alumnoToolStripMenuItem1,
+            this.periodosToolStripMenuItem,
+            this.grupoToolStripMenuItem1,
+            this.salaDeComputoToolStripMenuItem1});
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.consultarToolStripMenuItem.Text = "Consultar";
             // 
-            // tallerDeBasesDeDatosToolStripMenuItem
+            // profesorToolStripMenuItem
             // 
-            this.tallerDeBasesDeDatosToolStripMenuItem.Name = "tallerDeBasesDeDatosToolStripMenuItem";
-            this.tallerDeBasesDeDatosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.tallerDeBasesDeDatosToolStripMenuItem.Text = "Taller de bases de datos";
+            this.profesorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vecesQueUsoUnAulaToolStripMenuItem,
+            this.vecesQueImpartioClasesToolStripMenuItem,
+            this.vecesQueFaltóToolStripMenuItem,
+            this.clasesQueImparteToolStripMenuItem});
+            this.profesorToolStripMenuItem.Name = "profesorToolStripMenuItem";
+            this.profesorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.profesorToolStripMenuItem.Text = "Profesor";
             // 
-            // sistemasOperativosToolStripMenuItem
+            // vecesQueUsoUnAulaToolStripMenuItem
             // 
-            this.sistemasOperativosToolStripMenuItem.Name = "sistemasOperativosToolStripMenuItem";
-            this.sistemasOperativosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.sistemasOperativosToolStripMenuItem.Text = "Sistemas operativos";
+            this.vecesQueUsoUnAulaToolStripMenuItem.Name = "vecesQueUsoUnAulaToolStripMenuItem";
+            this.vecesQueUsoUnAulaToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.vecesQueUsoUnAulaToolStripMenuItem.Text = "Veces que uso un aula";
             // 
-            // diseñoEImpDeBdToolStripMenuItem
+            // vecesQueImpartioClasesToolStripMenuItem
             // 
-            this.diseñoEImpDeBdToolStripMenuItem.Name = "diseñoEImpDeBdToolStripMenuItem";
-            this.diseñoEImpDeBdToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.diseñoEImpDeBdToolStripMenuItem.Text = "Diseño e imp. de bd";
+            this.vecesQueImpartioClasesToolStripMenuItem.Name = "vecesQueImpartioClasesToolStripMenuItem";
+            this.vecesQueImpartioClasesToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.vecesQueImpartioClasesToolStripMenuItem.Text = "Veces que impartio clases";
+            // 
+            // vecesQueFaltóToolStripMenuItem
+            // 
+            this.vecesQueFaltóToolStripMenuItem.Name = "vecesQueFaltóToolStripMenuItem";
+            this.vecesQueFaltóToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.vecesQueFaltóToolStripMenuItem.Text = "Veces que faltó";
+            // 
+            // clasesQueImparteToolStripMenuItem
+            // 
+            this.clasesQueImparteToolStripMenuItem.Name = "clasesQueImparteToolStripMenuItem";
+            this.clasesQueImparteToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.clasesQueImparteToolStripMenuItem.Text = "Clases que imparte";
+            // 
+            // alumnoToolStripMenuItem1
+            // 
+            this.alumnoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vecesQueFaltóToolStripMenuItem1,
+            this.vecesQueAsistióToolStripMenuItem,
+            this.clasesALasQueAsisteToolStripMenuItem,
+            this.profesoresQueTieneToolStripMenuItem});
+            this.alumnoToolStripMenuItem1.Name = "alumnoToolStripMenuItem1";
+            this.alumnoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.alumnoToolStripMenuItem1.Text = "Alumno";
+            // 
+            // vecesQueFaltóToolStripMenuItem1
+            // 
+            this.vecesQueFaltóToolStripMenuItem1.Name = "vecesQueFaltóToolStripMenuItem1";
+            this.vecesQueFaltóToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
+            this.vecesQueFaltóToolStripMenuItem1.Text = "Veces que faltó";
+            // 
+            // vecesQueAsistióToolStripMenuItem
+            // 
+            this.vecesQueAsistióToolStripMenuItem.Name = "vecesQueAsistióToolStripMenuItem";
+            this.vecesQueAsistióToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.vecesQueAsistióToolStripMenuItem.Text = "Veces que asistió";
+            // 
+            // clasesALasQueAsisteToolStripMenuItem
+            // 
+            this.clasesALasQueAsisteToolStripMenuItem.Name = "clasesALasQueAsisteToolStripMenuItem";
+            this.clasesALasQueAsisteToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.clasesALasQueAsisteToolStripMenuItem.Text = "Clases a las que asiste";
+            // 
+            // profesoresQueTieneToolStripMenuItem
+            // 
+            this.profesoresQueTieneToolStripMenuItem.Name = "profesoresQueTieneToolStripMenuItem";
+            this.profesoresQueTieneToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.profesoresQueTieneToolStripMenuItem.Text = "Profesores que tiene";
+            // 
+            // periodosToolStripMenuItem
+            // 
+            this.periodosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.periodoActualToolStripMenuItem,
+            this.seleccionarPeriodoToolStripMenuItem});
+            this.periodosToolStripMenuItem.Name = "periodosToolStripMenuItem";
+            this.periodosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.periodosToolStripMenuItem.Text = "Periodos";
+            // 
+            // periodoActualToolStripMenuItem
+            // 
+            this.periodoActualToolStripMenuItem.Name = "periodoActualToolStripMenuItem";
+            this.periodoActualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.periodoActualToolStripMenuItem.Text = "Periodo actual";
+            // 
+            // seleccionarPeriodoToolStripMenuItem
+            // 
+            this.seleccionarPeriodoToolStripMenuItem.Name = "seleccionarPeriodoToolStripMenuItem";
+            this.seleccionarPeriodoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seleccionarPeriodoToolStripMenuItem.Text = "Seleccionar periodo";
+            // 
+            // grupoToolStripMenuItem1
+            // 
+            this.grupoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alumnosToolStripMenuItem,
+            this.clasesQueTomaToolStripMenuItem,
+            this.profesoresQueTieneToolStripMenuItem1});
+            this.grupoToolStripMenuItem1.Name = "grupoToolStripMenuItem1";
+            this.grupoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.grupoToolStripMenuItem1.Text = "Grupo";
+            // 
+            // alumnosToolStripMenuItem
+            // 
+            this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.alumnosToolStripMenuItem.Text = "Alumnos";
+            // 
+            // clasesQueTomaToolStripMenuItem
+            // 
+            this.clasesQueTomaToolStripMenuItem.Name = "clasesQueTomaToolStripMenuItem";
+            this.clasesQueTomaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.clasesQueTomaToolStripMenuItem.Text = "Clases que toma";
+            // 
+            // profesoresQueTieneToolStripMenuItem1
+            // 
+            this.profesoresQueTieneToolStripMenuItem1.Name = "profesoresQueTieneToolStripMenuItem1";
+            this.profesoresQueTieneToolStripMenuItem1.Size = new System.Drawing.Size(181, 22);
+            this.profesoresQueTieneToolStripMenuItem1.Text = "Profesores que tiene";
+            // 
+            // salaDeComputoToolStripMenuItem1
+            // 
+            this.salaDeComputoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.estadoToolStripMenuItem});
+            this.salaDeComputoToolStripMenuItem1.Name = "salaDeComputoToolStripMenuItem1";
+            this.salaDeComputoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.salaDeComputoToolStripMenuItem1.Text = "Sala de computo";
+            this.salaDeComputoToolStripMenuItem1.Click += new System.EventHandler(this.salaDeComputoToolStripMenuItem1_Click);
+            // 
+            // estadoToolStripMenuItem
+            // 
+            this.estadoToolStripMenuItem.Name = "estadoToolStripMenuItem";
+            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadoToolStripMenuItem.Text = "Estado";
             // 
             // Interfaz
             // 
@@ -181,16 +313,32 @@
         private PictureBox pictureBox1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem iNICIOToolStripMenuItem;
-        private ToolStripMenuItem salasDeComputoToolStripMenuItem;
-        private ToolStripMenuItem salaDeComputo1ToolStripMenuItem;
-        private ToolStripMenuItem salaDeComputo2ToolStripMenuItem;
-        private ToolStripMenuItem salaDeComputo3ToolStripMenuItem;
-        private ToolStripMenuItem hORARIOSDETRABAJOToolStripMenuItem;
-        private ToolStripMenuItem mATERIASIMPARTIDASToolStripMenuItem;
-        private ToolStripMenuItem telecomunicacionesToolStripMenuItem;
-        private ToolStripMenuItem estructuraDeDatosToolStripMenuItem;
-        private ToolStripMenuItem tallerDeBasesDeDatosToolStripMenuItem;
-        private ToolStripMenuItem sistemasOperativosToolStripMenuItem;
-        private ToolStripMenuItem diseñoEImpDeBdToolStripMenuItem;
+        private ToolStripMenuItem registrarToolStripMenuItem;
+        private ToolStripMenuItem alumnoToolStripMenuItem;
+        private ToolStripMenuItem docenteToolStripMenuItem;
+        private ToolStripMenuItem salaDeComputoToolStripMenuItem;
+        private ToolStripMenuItem horarioToolStripMenuItem;
+        private ToolStripMenuItem grupoToolStripMenuItem;
+        private ToolStripMenuItem periodoToolStripMenuItem;
+        private ToolStripMenuItem consultarToolStripMenuItem;
+        private ToolStripMenuItem profesorToolStripMenuItem;
+        private ToolStripMenuItem vecesQueUsoUnAulaToolStripMenuItem;
+        private ToolStripMenuItem vecesQueImpartioClasesToolStripMenuItem;
+        private ToolStripMenuItem vecesQueFaltóToolStripMenuItem;
+        private ToolStripMenuItem clasesQueImparteToolStripMenuItem;
+        private ToolStripMenuItem alumnoToolStripMenuItem1;
+        private ToolStripMenuItem vecesQueFaltóToolStripMenuItem1;
+        private ToolStripMenuItem vecesQueAsistióToolStripMenuItem;
+        private ToolStripMenuItem clasesALasQueAsisteToolStripMenuItem;
+        private ToolStripMenuItem profesoresQueTieneToolStripMenuItem;
+        private ToolStripMenuItem periodosToolStripMenuItem;
+        private ToolStripMenuItem periodoActualToolStripMenuItem;
+        private ToolStripMenuItem seleccionarPeriodoToolStripMenuItem;
+        private ToolStripMenuItem grupoToolStripMenuItem1;
+        private ToolStripMenuItem alumnosToolStripMenuItem;
+        private ToolStripMenuItem clasesQueTomaToolStripMenuItem;
+        private ToolStripMenuItem profesoresQueTieneToolStripMenuItem1;
+        private ToolStripMenuItem salaDeComputoToolStripMenuItem1;
+        private ToolStripMenuItem estadoToolStripMenuItem;
     }
 }
